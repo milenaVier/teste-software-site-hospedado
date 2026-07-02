@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Achados e Perdidos - Católica SC</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo-catolica.png">
+</head>
+
+<body>
+
+    <main class="container my-5">
+
+        <!-- Feed Header -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <span class="badge px-3 py-2 rounded-pill fw-semibold mb-2"
+                    style="background-color: var(--primary-light); color: var(--primary-color);">
+                    <i class="bi bi-tag-fill me-1"></i>
+                    Católica SC
+                </span>
+
+                <h1 class="fw-bold text-dark mb-1">
+                    Mural de Achados e Perdidos
+                </h1>
+
+                <p class="text-secondary mb-0">
+                    Ajude a encontrar e devolver pertences no campus da universidade.
+                </p>
+            </div>
+
+            <div class="col-md-6 text-md-end">
+                <a href="new.html"
+                    class="btn btn-catolica px-4 py-3 rounded-pill shadow-sm me-2">
+                    <i class="bi bi-plus-circle-fill me-2"></i>
+                    Registrar Novo Item
+                </a>
+
+                <a href="login.html"
+                    class="btn btn-outline-catolica px-4 py-3 rounded-pill shadow-sm">
+                    <i class="bi bi-box-arrow-in-right me-2"></i>
+                    Entrar
+                </a>
+            </div>
+        </div>
+
+        <!-- Pesquisa -->
+        <div class="card border-0 shadow-sm rounded-4 p-4 mb-5">
+
+            <form class="row g-3 align-items-end">
+
+                <div class="col-lg-5 col-md-6">
+                    <label for="searchInput"
+                        class="form-label text-dark fw-semibold small">
+                        <i class="bi bi-search me-1"></i>
+                        Buscar por nome ou palavra-chave
+                    </label>
+
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-light text-secondary">
+                            <i class="bi bi-search"></i>
+                        </span>
+
+                        <input
+                            type="text"
+                            class="form-control bg-light border-light"
+                            id="searchInput"
+                            placeholder="Ex: Garrafa, mochila, chave..."
+                        >
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <label for="typeFilter"
+                        class="form-label text-dark fw-semibold small">
+                        <i class="bi bi-filter me-1"></i>
+                        Tipo
+                    </label>
+
+                    <select class="form-select bg-light border-light" id="typeFilter">
+                        <option>Todos</option>
+                        <option>Perdidos</option>
+                        <option>Encontrados</option>
+                    </select>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <label for="statusFilter"
+                        class="form-label text-dark fw-semibold small">
+                        <i class="bi bi-check-circle me-1"></i>
+                        Status
+                    </label>
+
+                    <select class="form-select bg-light border-light" id="statusFilter">
+                        <option>Todos</option>
+                        <option>Ativos</option>
+                        <option>Resolvidos</option>
+                    </select>
+                </div>
+
+                <div class="col-lg-1 col-md-12">
+                    <button type="button"
+                        class="btn btn-catolica w-100 py-2 rounded-3">
+                        Filtrar
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
